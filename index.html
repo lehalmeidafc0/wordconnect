@@ -1,211 +1,223 @@
 
-<html>
+<html lang="en">
 <head>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-background-image: url(../Leticia\ Almeida.jpg);
-background-repeat: contain ;
-background-position:center center ;
-  min-height: 100%;
-}
-<head>
-  <body>
-    <h1> primeira grande<\h1>
-     
-.w3-bar .w3-button {
-  padding: 16px;
-}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
-     
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>word<br>connect</b></h3>
   </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
-  
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTATO</a>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SOBRE</a> 
+   
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SERVIÇOS</a> 
+   
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CONTATO</a>
+  </div>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">SAIBA MAIS</a></p>
-  </div> 
-  <div 
-    <i class="fa fa-instagram w3-hover-opacity"></i>
- 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
 </header>
 
-<!-- About Section -->
-<div class="w3-container" style="padding: 110px;px 20px" id="about">
-  <h3 class="w3-center">SOBRE A INICIATIVA</h3>
-  <p class="w3-large">O word connetc é uma iniciativa criada em 2023 para incentivar mulheres, homens e adolescentes a conhecer as áreas de ciências, tecnologia e computação. Promovemos aprendizado sobre programação.</p>
-  <div class="w3-row-padding w3-center" style="center" top 60px;">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-center w3-jumbo w3-center"></i>
-      <p class="w3-large">Criatividade</p>
-      <p> Análise de Desenvolvimento  de Sistemas  concentra-se na criação, desenvolvimento, análise, previsão e implementação de sistemas de informação. Uma de suas principais tarefas é a programação de computadores e o desenvolvimento de software com foco no aumento da capacidade dos recursos dos dispositivos.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-center w3-jumbo"></i>
-      <p class="w3-large">Paixão</p>
-      <p>Desperta uma paixão na area, com o objetivo de atrair pessoas para a mesma.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-center w3-jumbo"></i>
-      <p class="w3-large">Projeto</p>
-      <p>Desenvolver projetos e conhecimento na area.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-center w3-jumbo"></i>
-      <p class="w3-large">Apoiar</p>
-      <p> A word connect tem como foco apoiar pessoas tem como objetivo crescer na area da tecnologia.</p>
-    </div>
-  </div>
-</div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:110px 15px center center">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b> WORD CONNECT</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Analise De Desenvolvimento De Sistema.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 76, 255)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3> Um pouco mais sobre a iniciativa.</h3>
-      <p>A área de análise e desenvolvimento de sistemas desempenha um papel crucial na concepção, criação e manutenção de sistemas de software. Essa disciplina abrange uma variedade de atividades que visam atender às necessidades dos usuários, projetar soluções eficientes e implementar software funcional.</p>
+    <div class="w3-half">
+      <img src="C:\Users\Família Almeida\Downloads\1.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="C:\Users\Família Almeida\Downloads\2.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
       
 
-<
-  
+    
 
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">42%</span>
-    <br>SÃO PAULO LIDEROU O RANKING DAS VAGAS.
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id=" SOBRE" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 76, 255)" class="w3-round">
+    <p> O word connetc é uma iniciativa criada em 2023 para incentivar mulheres, homens e adolescentes a conhecerem as áreas de ciências, tecnologia e computação. Promovemos aprendizado sobre programação.
+
+
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>SERVIÇOS.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 76, 255)" class="w3-round">
+    
+    <p> Análise de Desenvolvimento de Sistemas concentra-se na criação, desenvolvimento, análise, previsão e implementação de sistemas de informação. Uma de suas principais tarefas é a programação de computadores e o desenvolvimento de software com foco no aumento da capacidade dos recursos dos dispositivos.
+
+    </p>
     
   </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">9%</span>
-    <br>SEGUIDO POR MINAS GERAIS
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">7%</span>
-    <br>RIO DE JANEIRO E RIO GRANDE DO SUL 
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">6%</span>
-    <br>SANTA CATARINA E PARANÁ
 
-  </div>
-</div>
-
-
-
-
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>DADOS.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>
+    A área de análise e desenvolvimento de sistemas desempenha um papel crucial na concepção, criação e manutenção de sistemas de software. Essa disciplina abrange uma variedade de atividades que visam atender às necessidades dos usuários, projetando soluções eficientes e implementando software funcional.
+      > 
+      
   <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3> Areas Da Tecnoliga Que Pretende Crescer A Cada Dia .</h3>
-      <p> SEGUNDO O PORTAL DE EMPREGOS, O NUMERO DE VAGAS, NO SETOR DE TECNOLOGIA AUMENTOU 34,3 % NOS ULTIMOS 10 MESES DE JANEIRO A OUTUBRO. FORAM CRIADAS 74 MIL
-        NOVAS OPORTUNIDADES NESTE GRUPO.
-        ATÉ O MOMENTO, JA FORAM ABERTAS QUASE 10 MIL VAGAS NO PAIS.
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Análise de Requisitos:
+
+          A análise de requisitos é uma fase inicial essencial. Envolve uma coleta e compreensão das necessidades dos usuários, desenvolvendo essas informações em requisitos claros e compreensíveis para o desenvolvimento de software.</li>
+        <li class="w3-padding-16">Projeto de Sistemas:
+
+          A fase de projeto envolve a criação de uma arquitetura de sistema sólido e a definição da estrutura do software. Isso inclui a escolha de tecnologias relacionadas, o design de banco de dados e a elaboração de diagramas que representam a lógica e o fluxo do sistema.</li>
+        <li class="w3-padding-16">Desenvolvimento de Software:
+
+          A implementação das soluções projetadas ocorre nesta fase. Programadores e desenvolvedores de software utilizam linguagens de programação e ferramentas específicas para traduzir os requisitos e designs em código conforme necessário.</li>
+        <li class="w3-padding-16">Testes de Software:
+
+          Testar é uma parte crítica do ciclo de vida do desenvolvimento de software. Os profissionais de análise e desenvolvimento de sistemas realizam testes para garantir que o software atenda aos requisitos especificados, seja funcional e livre de erros.</li>
+        <li class="w3-padding-16">Manutenção de Software:
+
+          Após a implementação, os sistemas precisam ser mantidos. Isso envolve correção de bugs, atualizações para atender a novos requisitos e otimizações para melhorar o desempenho.</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
         
-         </p>
-      
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
     </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i> Programação</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">30%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Segurança da informação</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">20%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Computação Em Nivem</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">41%</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Envie-nos uma mensagem:</p>
-  <div style="center":100%">
-    
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email:wordconnect2205@gmail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> Enviar
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="Leticia Almeida.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    
   </div>
   
-</footer>
- 
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
 <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -213,25 +225,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
 </script>
 
 </body>
 </html>
-
